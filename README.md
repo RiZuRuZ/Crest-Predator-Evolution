@@ -100,7 +100,7 @@ CHANGES_v27.txt สิ่งที่เปลี่ยนใน v27
 
 | สมาชิก | รหัสนักศึกษา | บทบาท | ความรับผิดชอบ |
 |---|---|---|---|
-| ภูริ เตชตรีสุคนธ์ | | Lead Developer / Hardware & Game Engineer | ออกแบบ game mechanics และสถาปัตยกรรมระบบ · พัฒนา Verilog ทั้งหมด 78 module พร้อม constraints (XDC) และ testbench · แปลงกราฟิกเป็น ROM (.mem) และพัฒนาเครื่องมือใน `tools/` · ออกแบบเพลงและเสียงประกอบ · synthesize และทดสอบบนบอร์ด Nexys A7-100T · พัฒนาเกมเวอร์ชันคอม (`CrestPredatorV27.html`) · วางแผนงานใน Notion · จัดทำเอกสาร AllDetails และ README |
+| ภูริ เตชตรีสุคนธ์ | 68070501040 | Lead Developer / Hardware & Game Engineer | ออกแบบ game mechanics และสถาปัตยกรรมระบบ · พัฒนา Verilog ทั้งหมด 78 module พร้อม constraints (XDC) และ testbench · แปลงกราฟิกเป็น ROM (.mem) และพัฒนาเครื่องมือใน `tools/` · ออกแบบเพลงและเสียงประกอบ · synthesize และทดสอบบนบอร์ด Nexys A7-100T · พัฒนาเกมเวอร์ชันคอม (`CrestPredatorV27.html`) · วางแผนงานใน Notion · จัดทำเอกสาร AllDetails และ README |
 | นิพาดา สันธนาคร | 68070501025 |  Visual & Presentation Designer | ออกแบบ sprite และ animation ของตัวละคร · จัดทำ state diagram · จัดทำสไลด์นำเสนอ |
 | ทิวัตถ์ แพงสาร | 68070501069 | Visual & Presentation Designer | ออกแบบ sprite และ animation ของตัวละคร · จัดทำ state diagram · จัดทำสไลด์นำเสนอ |
 | พรหมพิริยะ พงษ์สกุล | 68070501076 | Visual & Presentation Designer | ออกแบบ sprite และ animation ของตัวละคร · จัดทำ state diagram · จัดทำสไลด์นำเสนอ |
