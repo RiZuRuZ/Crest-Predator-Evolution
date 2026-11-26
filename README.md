@@ -58,6 +58,14 @@
 
 </details>
 
+### Sprite
+
+sprite ทั้งหมดของเกม (มังกร 4 ร่าง ปลา บอส ศัตรู อุปสรรค power-up สาหร่าย และพื้นหลัง) อยู่ที่ [`ART_sprite_sheets/`](ART_sprite_sheets) ดูขนาดเฟรมและจำนวนเฟรมของแต่ละไฟล์ได้ใน [`manifest.json`](ART_sprite_sheets/manifest.json)
+
+[![Sprite overview](ART_sprite_sheets/overview_x2.png)](ART_sprite_sheets/overview_x2.png)
+
+> เป็นภาพที่ export จากเกมเวอร์ชันคอม (สี 12 บิตเหมือนบนบอร์ด) ไม่ใช่ไฟล์ต้นฉบับของผู้ออกแบบ
+
 ## เริ่มจากตรงไหนดี
 
 | อยากทำอะไร | ไปที่ |
@@ -75,7 +83,8 @@ Crest-Predator-Evolution/
 ├── GameSRC/
 │   ├── cpe v27 full.zip            source code ทั้งหมดของ v27 (ต้องแตกไฟล์ก่อนใช้)
 │   ├── CrestPredatorV27.html       เกมเวอร์ชันคอม
-│   └── CrestPredator_v27_nexys-a7-100t.bit   bitstream พร้อมโปรแกรมลงบอร์ด
+│   └── top.bit                     bitstream พร้อมโปรแกรมลงบอร์ด
+├── ART_sprite_sheets/              sprite sheet ที่ export แล้ว (PNG) + ภาพรวม
 ├── REPORT/
 │   ├── TH Version/                 รายงานภาษาไทย (.docx)
 │   ├── EN Version/                 รายงานภาษาอังกฤษ (.docx)
@@ -102,7 +111,8 @@ tools/          Python script สร้าง ROM ภาพ ฟอนต์ แ�
 |---|---|
 | [`GameSRC/cpe v27 full.zip`](GameSRC/cpe%20v27%20full.zip) | โค้ด Verilog, ROM ภาพ/เพลง (`.mem`), constraints, testbench และ script สร้างไฟล์ |
 | [`GameSRC/CrestPredatorV27.html`](GameSRC/CrestPredatorV27.html) | เกมเวอร์ชันคอม — ไฟล์เดียว เปิดในเบราว์เซอร์ได้ทันที มีแผงจำลองบอร์ด (สวิตช์ LED 7-segment ปุ่ม) ใต้จอเกม |
-| [`GameSRC/CrestPredator_v27_nexys-a7-100t.bit`](GameSRC/CrestPredator_v27_nexys-a7-100t.bit) | bitstream v27 สำหรับ Nexys A7-100T — โปรแกรมลงบอร์ดได้เลยโดยไม่ต้อง build เอง (Vivado 2024.2) |
+| [`GameSRC/top.bit`](GameSRC/top.bit) | bitstream v27 สำหรับ Nexys A7-100T — โปรแกรมลงบอร์ดได้เลยโดยไม่ต้อง build เอง (Vivado 2024.2) |
+| [`ART_sprite_sheets`](ART_sprite_sheets) | sprite sheet ทั้งหมดของเกม (PNG 23 ไฟล์) พร้อมภาพรวมและ manifest — ดูหัวข้อ [Sprite](#sprite) |
 | [`REPORT/TH Version`](REPORT/TH%20Version) · [`REPORT/EN Version`](REPORT/EN%20Version) | รายงานโครงงานฉบับภาษาไทย (v11) และภาษาอังกฤษ (v5) |
 | [`REPORT/ALL DETAILS FullEditon(Option)`](REPORT/ALL%20DETAILS%20FullEditon(Option)) | AllDetails v4: ภาค 1 ภาพรวมเกม (หัวข้อ 1–20), ภาค 2 ข้อมูลเชิงลึก — การ์ดโมดูล, ค่าคงที่, ภาพ .mem, ผังสัญญาณ top.v, testbench, ตาราง transition FSM, pipeline, เพลง, ทรัพยากร FPGA (หัวข้อ 21–31) |
 | [`STATE DIAGRAMS`](STATE%20DIAGRAMS) | state diagram ทั้งหมด 36 หน้า (00 Index + 01–35) เปิดด้วย [draw.io / diagrams.net](https://app.diagrams.net) — มี 2 ไฟล์: `..._v27.drawio` และ `..._v27_clean.drawio` |
@@ -147,7 +157,7 @@ tools/          Python script สร้าง ROM ภาพ ฟอนต์ แ�
 
 ### โปรแกรมบอร์ดโดยไม่ต้อง build เอง
 
-ใช้ไฟล์ [`GameSRC/CrestPredator_v27_nexys-a7-100t.bit`](GameSRC/CrestPredator_v27_nexys-a7-100t.bit) (build ด้วย Vivado 2024.2, ใช้กับ Nexys A7-100T เท่านั้น)
+ใช้ไฟล์ [`GameSRC/top.bit`](GameSRC/top.bit) (build ด้วย Vivado 2024.2, ใช้กับ Nexys A7-100T เท่านั้น)
 
 Vivado → Open Hardware Manager → Auto Connect → Program Device → เลือกไฟล์ `.bit`
 
@@ -199,20 +209,6 @@ Vivado → Open Hardware Manager → Auto Connect → Program Device → เล�
 - **เพลง 16-bit สังเคราะห์ในวงจร:** wavetable 4 เสียง + กลอง 5 แบบ ที่ 48,828 Hz เพลงคอมใช้โมเดลเดียวกัน
 - **สร้างไฟล์ ROM ด้วย Python:** ภาพ ฟอนต์ แมพ บอส และโน้ตเพลง สร้างจาก script ใน `tools/`
 
-<details>
-<summary><b>ประวัติเวอร์ชันโดยย่อ (กดเพื่อดู)</b></summary>
-
-| เวอร์ชัน | สิ่งที่เพิ่ม |
-|---|---|
-| ≤ v5 | โครงเกมพื้นฐาน: VGA, ผู้เล่น, ปลา, EP, Evolution, Oxygen, HUD |
-| v6 | ทุ่น แมงกะพรุน ฉมวก, ฉลามยักษ์ + มินิเกมสับสวิตช์, สกิลทุกร่าง, ไมค์, เอียงบอร์ด |
-| v14–v16 | ฝูงปลา, บอส, รหัสลับ |
-| v18–v20 | โหมด EASY/NORMAL/HARD, power-up, event มินิเกมทุก 50 วิ, เกรด |
-| v21–v26 | หลบหอก, เกมลูกศร, เฟสบอสเพิ่ม, แก้บอสชนทุ่นตามรูปร่างจริง |
-| v27 | เพลง 16-bit 5 track, เปิด/ปิดเพลงใน PAUSE |
-
-</details>
-
 > อยากรู้ลึกกว่านี้ — ทุกโมดูล (78 module) ค่าคงที่ ผังสัญญาณใน `top.v` ตาราง transition ของ FSM และ pipeline การวาดภาพ — เปิดอ่านได้ใน [AllDetails v4 (PDF)](REPORT/ALL%20DETAILS%20FullEditon(Option)/CrestPredator_AllDetails_v4%20D.pdf) ภาค 2 (หัวข้อ 21–31)
 
 ## ข้อควรรู้
@@ -234,8 +230,8 @@ Vivado → Open Hardware Manager → Auto Connect → Program Device → เล�
 
 ## รายวิชา
 
-<!-- TODO: ใส่รหัสวิชา / ชื่อวิชา / อาจารย์ / มหาวิทยาลัย -->
-CPE222 
-DIGITAL ELECTRONICS AND LOGIC DESIGN
-TAWEECHAI NUNTAWISUTTIWONG 
-KMUTT
+| | |
+|---|---|
+| รหัส / ชื่อวิชา | CPE222 Digital Electronics and Logic Design |
+| อาจารย์ผู้สอน | Taweechai Nuntawisuttiwong |
+| มหาวิทยาลัย | มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี (KMUTT) |
