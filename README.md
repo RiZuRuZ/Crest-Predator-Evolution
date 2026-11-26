@@ -93,8 +93,8 @@ Crest-Predator-Evolution/
 │   └── top.bit                     bitstream พร้อมโปรแกรมลงบอร์ด
 ├── ART_sprite_sheets/              sprite sheet ที่ export แล้ว (PNG) + ภาพรวม
 ├── REPORT/
-│   ├── TH Version/                 รายงานภาษาไทย (.docx, .pdf)
-│   ├── EN Version/                 รายงานภาษาอังกฤษ (.docx, .pdf)
+│   ├── TH Version/                 รายงานฉบับสมบูรณ์ภาษาไทย (PDF)
+│   ├── EN Version/                 รายงานฉบับสมบูรณ์ภาษาอังกฤษ (PDF)
 │   └── ALL DETAILS FullEditon(Option)/   เอกสารรายละเอียดทั้งหมด (PDF)
 ├── STATE DIAGRAMS/                 state diagram 36 หน้า (.drawio)
 ├── NOTION_WORKPLAN/                ตารางแผนงานจาก Notion (CSV)
@@ -120,7 +120,7 @@ tools/          Python script สร้าง ROM ภาพ ฟอนต์ แ�
 | [`GameSRC/CrestPredatorV27.html`](GameSRC/CrestPredatorV27.html) | เกมเวอร์ชันคอม — ไฟล์เดียว เปิดในเบราว์เซอร์ได้ทันที มีแผงจำลองบอร์ด (สวิตช์ LED 7-segment ปุ่ม) ใต้จอเกม |
 | [`GameSRC/top.bit`](GameSRC/top.bit) | bitstream v27 สำหรับ Nexys A7-100T — โปรแกรมลงบอร์ดได้เลยโดยไม่ต้อง build เอง (Vivado 2024.2) |
 | [`ART_sprite_sheets`](ART_sprite_sheets) | sprite sheet ทั้งหมดของเกม (PNG 23 ไฟล์) พร้อมภาพรวมและ manifest — ดูหัวข้อ [Sprite](#sprite) |
-| [`REPORT/TH Version`](REPORT/TH%20Version) · [`REPORT/EN Version`](REPORT/EN%20Version) | รายงานโครงงานฉบับภาษาไทย (v11) และภาษาอังกฤษ (v5) มีทั้งไฟล์ Word และ PDF |
+| [`REPORT/TH Version`](REPORT/TH%20Version) · [`REPORT/EN Version`](REPORT/EN%20Version) | รายงานโครงงานฉบับสมบูรณ์ (FINAL) ภาษาไทย 82 หน้า และภาษาอังกฤษ 72 หน้า เป็นไฟล์ PDF |
 | [`REPORT/ALL DETAILS FullEditon(Option)`](REPORT/ALL%20DETAILS%20FullEditon(Option)) | AllDetails v4: ภาค 1 ภาพรวมเกม (หัวข้อ 1–20), ภาค 2 ข้อมูลเชิงลึก — การ์ดโมดูล, ค่าคงที่, ภาพ .mem, ผังสัญญาณ top.v, testbench, ตาราง transition FSM, pipeline, เพลง, ทรัพยากร FPGA (หัวข้อ 21–31) |
 | [`STATE DIAGRAMS`](STATE%20DIAGRAMS) | state diagram ทั้งหมด 36 หน้า (00 Index + 01–35) เปิดด้วย [draw.io / diagrams.net](https://app.diagrams.net) — มี 2 ไฟล์: `..._v27.drawio` และ `..._v27_clean.drawio` |
 | [`NOTION_WORKPLAN`](NOTION_WORKPLAN) | ตารางแผนงานจาก Notion (หมวด / สถานะ / รายละเอียด) |
@@ -223,7 +223,7 @@ Vivado → Open Hardware Manager → Auto Connect → Program Device → เล�
 - ค่าเวลา / ความเร็ว / ขนาดในโค้ดส่วนใหญ่มีป้าย `PLACEHOLDER` คือค่าที่ทีมจูนจากการเล่น
 - คอมเมนต์บางจุดในโค้ดเป็นของเวอร์ชันเก่า (เช่น "pixel changes every 4 clocks") — พฤติกรรมจริงดูจากโค้ดและเอกสาร AllDetails หัวข้อ 20
 - draw.io v27 หน้า 23 ยังไม่มีเส้น "ชนทุ่นตอนบอสเหลือ HP 1 → ARROW" และหน้า 35 dev_cheat เป็นแบบย่อ (โค้ดถูกต้อง)
-- repo นี้มีไฟล์ใหญ่ (สไลด์ รายงาน เพลง ~90 MB) การกด **Code → Download ZIP** จะได้ไฟล์ขนาดใหญ่ ถ้าต้องการแค่โค้ดให้โหลด `GameSRC/cpe v27 full.zip` ตัวเดียว
+- repo นี้มีไฟล์ใหญ่ (สไลด์ รายงาน เพลง ~66 MB) การกด **Code → Download ZIP** จะได้ไฟล์ขนาดใหญ่ ถ้าต้องการแค่โค้ดให้โหลด `GameSRC/cpe v27 full.zip` ตัวเดียว
 
 ## ทีมผู้พัฒนา
 
