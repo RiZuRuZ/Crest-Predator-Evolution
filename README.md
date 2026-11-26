@@ -229,9 +229,9 @@ Vivado → Open Hardware Manager → Auto Connect → Program Device → เล�
 
 | สมาชิก | รหัสนักศึกษา | บทบาท | ความรับผิดชอบ |
 |---|---|---|---|
-| ภูริ เตชตรีสุคนธ์ | 68070501040 | Lead Developer / Hardware & Game Engineer | ออกแบบ game mechanics และสถาปัตยกรรมระบบ · พัฒนา Verilog ทั้งหมด 78 module พร้อม constraints (XDC) และ testbench · แปลงกราฟิกเป็น ROM (.mem) และพัฒนาเครื่องมือใน `tools/` · ออกแบบเพลงและเสียงประกอบ · synthesize และทดสอบบนบอร์ด Nexys A7-100T · พัฒนาเกมเวอร์ชันคอม (`CrestPredatorV27.html`) · วางแผนงานใน Notion · จัดทำเอกสาร AllDetails และ README |
+| ภูริ เตชตรีสุคนธ์ | 68070501040 | Lead Developer / Hardware & Game Engineer | ออกแบบ game mechanics และสถาปัตยกรรมระบบ · พัฒนา Verilog ทั้งหมด 78 module พร้อม constraints (XDC) และ testbench · แปลงกราฟิกเป็น ROM (.mem) และพัฒนาเครื่องมือใน `tools/` · ออกแบบเพลงและเสียงประกอบ · synthesize และทดสอบบนบอร์ด Nexys A7-100T · พัฒนาเกมเวอร์ชันคอม (`CrestPredatorV27.html`) · วางแผนงานใน Notion · จัดทำเอกสาร AllDetails และ README · จัดการ GitHub repository (โครงสร้างโฟลเดอร์ และการเผยแพร่งาน) |
 | นิพาดา สันธนาคร | 68070501025 |  Visual & Presentation Designer | ออกแบบ sprite และ animation ของตัวละคร · จัดทำ state diagram · จัดทำสไลด์นำเสนอ |
-| ทิวัตถ์ แพงสาร | 68070501069 | Visual & Presentation Designer | ออกแบบ sprite และ animation ของตัวละคร · จัดทำ state diagram · จัดทำสไลด์นำเสนอ |
+| ทิวัตถ์ แพงสาร | 68070501069 | Visual & Presentation Designer | ออกแบบ sprite และ animation ของตัวละคร · จัดทำ state diagram · จัดทำสไลด์นำเสนอ · ตัดต่อคลิป |
 | พรหมพิริยะ พงษ์สกุล | 68070501076 | Visual & Presentation Designer | ออกแบบ sprite และ animation ของตัวละคร · จัดทำ state diagram · จัดทำสไลด์นำเสนอ |
 | ศักรนันท์ ศรีสวัสดิ์ | 68070501085 | Technical Writer | เรียบเรียงและจัดทำรายงานโครงงาน |
 
