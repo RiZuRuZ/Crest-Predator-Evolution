@@ -1,0 +1,255 @@
+[
+ {
+  "name": "bg",
+  "sheet_px": [
+   960,
+   320
+  ],
+  "frame_w": 960,
+  "frame_h": 320,
+  "frames": 1,
+  "layout": "single image"
+ },
+ {
+  "name": "dragon1",
+  "sheet_px": [
+   730,
+   41
+  ],
+  "frame_w": 73,
+  "frame_h": 41,
+  "frames": 10,
+  "layout": "frames side by side"
+ },
+ {
+  "name": "dragon2",
+  "sheet_px": [
+   960,
+   58
+  ],
+  "frame_w": 96,
+  "frame_h": 58,
+  "frames": 10,
+  "layout": "frames side by side"
+ },
+ {
+  "name": "dragon3",
+  "sheet_px": [
+   1260,
+   74
+  ],
+  "frame_w": 126,
+  "frame_h": 74,
+  "frames": 10,
+  "layout": "frames side by side"
+ },
+ {
+  "name": "dragon4",
+  "sheet_px": [
+   1710,
+   106
+  ],
+  "frame_w": 171,
+  "frame_h": 106,
+  "frames": 10,
+  "layout": "frames side by side"
+ },
+ {
+  "name": "fish0",
+  "sheet_px": [
+   124,
+   27
+  ],
+  "frame_w": 31,
+  "frame_h": 27,
+  "frames": 4,
+  "layout": "frames side by side"
+ },
+ {
+  "name": "fish1",
+  "sheet_px": [
+   208,
+   42
+  ],
+  "frame_w": 52,
+  "frame_h": 42,
+  "frames": 4,
+  "layout": "frames side by side"
+ },
+ {
+  "name": "fish2",
+  "sheet_px": [
+   372,
+   52
+  ],
+  "frame_w": 93,
+  "frame_h": 52,
+  "frames": 4,
+  "layout": "frames side by side"
+ },
+ {
+  "name": "fish3",
+  "sheet_px": [
+   176,
+   35
+  ],
+  "frame_w": 44,
+  "frame_h": 35,
+  "frames": 4,
+  "layout": "frames side by side"
+ },
+ {
+  "name": "redshark",
+  "sheet_px": [
+   372,
+   52
+  ],
+  "frame_w": 93,
+  "frame_h": 52,
+  "frames": 4,
+  "layout": "frames side by side"
+ },
+ {
+  "name": "boss_n",
+  "sheet_px": [
+   708,
+   57
+  ],
+  "frame_w": 118,
+  "frame_h": 57,
+  "frames": 6,
+  "layout": "frames side by side"
+ },
+ {
+  "name": "boss_red",
+  "sheet_px": [
+   708,
+   57
+  ],
+  "frame_w": 118,
+  "frame_h": 57,
+  "frames": 6,
+  "layout": "frames side by side"
+ },
+ {
+  "name": "boss_p2",
+  "sheet_px": [
+   708,
+   57
+  ],
+  "frame_w": 118,
+  "frame_h": 57,
+  "frames": 6,
+  "layout": "frames side by side"
+ },
+ {
+  "name": "boss_p3",
+  "sheet_px": [
+   708,
+   57
+  ],
+  "frame_w": 118,
+  "frame_h": 57,
+  "frames": 6,
+  "layout": "frames side by side"
+ },
+ {
+  "name": "boss_flash",
+  "sheet_px": [
+   708,
+   57
+  ],
+  "frame_w": 118,
+  "frame_h": 57,
+  "frames": 6,
+  "layout": "frames side by side"
+ },
+ {
+  "name": "mine",
+  "sheet_px": [
+   172,
+   44
+  ],
+  "frame_w": 43,
+  "frame_h": 44,
+  "frames": 4,
+  "layout": "frames side by side"
+ },
+ {
+  "name": "boom",
+  "sheet_px": [
+   384,
+   64
+  ],
+  "frame_w": 64,
+  "frame_h": 64,
+  "frames": 6,
+  "layout": "frames side by side"
+ },
+ {
+  "name": "jelly",
+  "sheet_px": [
+   148,
+   52
+  ],
+  "frame_w": 37,
+  "frame_h": 52,
+  "frames": 4,
+  "layout": "frames side by side"
+ },
+ {
+  "name": "harp_h",
+  "sheet_px": [
+   352,
+   23
+  ],
+  "frame_w": 88,
+  "frame_h": 23,
+  "frames": 4,
+  "layout": "frames side by side"
+ },
+ {
+  "name": "harp_v",
+  "sheet_px": [
+   92,
+   88
+  ],
+  "frame_w": 23,
+  "frame_h": 88,
+  "frames": 4,
+  "layout": "frames side by side"
+ },
+ {
+  "name": "powerup",
+  "sheet_px": [
+   72,
+   24
+  ],
+  "frame_w": 24,
+  "frame_h": 24,
+  "frames": 3,
+  "layout": "frames side by side"
+ },
+ {
+  "name": "seaweed",
+  "sheet_px": [
+   488,
+   93
+  ],
+  "frame_w": 61,
+  "frame_h": 93,
+  "frames": 8,
+  "layout": "frames side by side"
+ },
+ {
+  "name": "shadow",
+  "sheet_px": [
+   118,
+   57
+  ],
+  "frame_w": 118,
+  "frame_h": 57,
+  "frames": 1,
+  "layout": "single image"
+ }
+]
