@@ -6,6 +6,12 @@
 
 > **English:** *Crest Predator Evolution* is a Feeding Frenzy-inspired underwater evolution game written entirely in Verilog for the Nexys A7-100T FPGA board with VGA output. Eat smaller fish, evolve through 4 forms, survive hazards and mini-games, then defeat the boss. A single-file browser version is included, so you can play without a board.
 
+## คลิปนำเสนอและ Demo
+
+[![Crest Predator Evolution — คลิปนำเสนอและ Demo](https://img.youtube.com/vi/t_mGAB2DUls/hqdefault.jpg)](https://www.youtube.com/watch?v=t_mGAB2DUls)
+
+▶ [ดูบน YouTube](https://www.youtube.com/watch?v=t_mGAB2DUls) — คลิปนำเสนอโปรเจกต์พร้อมสาธิตการเล่น (คลิปยังแสดงระบบเกมไม่ครบ ดูระบบทั้งหมดได้ที่ [AllDetails](REPORT/ALL%20DETAILS%20FullEditon(Option)/CrestPredator_AllDetails_v4%20D.pdf) และรายงาน)
+
 ## ภาพรวมเกม
 
 ผู้เล่นเป็น "มังกรทะเล" ตัวเล็ก ว่ายในโลกใต้ทะเล กินปลาที่เล็กกว่าเพื่อเก็บ Evolution Point (EP) วิวัฒนาการผ่าน 4 ร่าง หลบอันตราย จัดการ Oxygen และหัวใจ เล่นมินิเกม event ทุก 50 วินาที เมื่อ EP ถึง 500 จะเข้าสู่การต่อสู้กับบอส — ชนะบอส = WIN พร้อมเกรด
@@ -70,6 +76,7 @@ sprite ทั้งหมดของเกม (มังกร 4 ร่าง �
 
 | อยากทำอะไร | ไปที่ |
 |---|---|
+| ดูคลิป demo | [คลิปนำเสนอและ Demo](#คลิปนำเสนอและ-demo) |
 | ลองเล่นเลย (ไม่ต้องมีบอร์ด) | [เล่นบนคอม](#เล่นบนคอม) |
 | รันบนบอร์ดจริง | [วิธี build](#วิธี-build) |
 | ดูโค้ดทั้งหมด | [`GameSRC/`](GameSRC) |
